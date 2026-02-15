@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node
+node_modules/
+.next/
+out/
+.npm
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Skynet data (keep structure, ignore content)
+data/skynet/journal/*.md
+data/skynet/learnings/*.md
+!data/skynet/learnings/.gitkeep
+data/skynet/skills/*.md
+!data/skynet/skills/.gitkeep
+!data/skynet/journal/.gitkeep
+!data/skynet/SKYNET.md
+
+# Ralph
+.ralph/.ralph_session*
+.ralph/logs/
