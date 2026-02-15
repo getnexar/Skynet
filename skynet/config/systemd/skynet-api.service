@@ -1,0 +1,16 @@
+[Unit]
+Description=Skynet API Server
+After=network.target
+
+[Service]
+Type=simple
+User=roni_goldshmidt
+WorkingDirectory=/home/roni_goldshmidt/skynet
+Environment="PATH=/home/roni_goldshmidt/skynet/.venv/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/home/roni_goldshmidt/skynet/.venv/bin/uvicorn supervisor.main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+WatchdogSec=60
+
+[Install]
+WantedBy=multi-user.target

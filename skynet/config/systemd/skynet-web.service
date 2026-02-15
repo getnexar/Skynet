@@ -1,0 +1,14 @@
+[Unit]
+Description=Skynet Web Dashboard
+After=network.target skynet-api.service
+
+[Service]
+Type=simple
+User=roni_goldshmidt
+WorkingDirectory=/home/roni_goldshmidt/skynet/web
+ExecStart=/usr/bin/npm run start
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
