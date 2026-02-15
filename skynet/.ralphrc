@@ -1,0 +1,40 @@
+# Ralph Configuration for Skynet
+# This file configures the Ralph supervisor loop
+
+# Project name
+PROJECT_NAME="skynet"
+
+# Prompt file location
+PROMPT_FILE=".ralph/PROMPT.md"
+
+# Loop interval (seconds between iterations)
+LOOP_INTERVAL=60
+
+# Data directory
+DATA_DIR="data/skynet"
+
+# Journal directory
+JOURNAL_DIR="data/skynet/journal"
+
+# Learnings directory
+LEARNINGS_DIR="data/skynet/learnings"
+
+# Skills directory
+SKILLS_DIR="data/skynet/skills"
+
+# Database path
+DATABASE="data/ralph.db"
+
+# Enable verbose logging
+VERBOSE=false
+
+# Maximum iterations (0 = unlimited)
+MAX_ITERATIONS=0
+
+# Notification settings
+NOTIFY_ON_ERROR=true
+NOTIFY_ON_COMPLETION=true
+
+# Self-improvement settings
+SELF_IMPROVE_ENABLED=true
+SELF_IMPROVE_WHEN_IDLE=true
